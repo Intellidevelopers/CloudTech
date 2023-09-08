@@ -474,6 +474,7 @@ body {
   color: var(--white);
   font-weight: var(--fw-600);
   transition: var(--transition-2);
+  height: 100px;
 }
 
 .portfolio-list>li:nth-child(even) .card-content {
