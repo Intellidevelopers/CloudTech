@@ -28,11 +28,101 @@ a{
 h2{
   color: #fff;
   margin-top: 9%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: purple;
 }
 header{
   position: fixed;
   top: -20px;
-  background-color: rebeccapurple;
   width: 100%;margin-left: -2%;
   text-align: center;
+}
+button{
+  background-color: blueviolet;
+  border: none;
+  outline: none;
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+button:hover{
+  opacity: 0.7;
+}
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  /* Styles */
+  img{
+    width: 90%;
+    height: 50%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 10%;
+    border-radius: 7px;
+  }
+  p{
+    color: white;
+  }
+  .images{
+    background-color: lightgrey;
+    border-radius: 7px;
+    text-align: center;
+    background-image: url('section.jpg');
+  }
+  h2{
+    margin-top: -1%;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin-left: -3%;
+    margin-top: 0.1em;
+    position: fixed;
+    top: -1%;
+  }
+  .back{
+    position: fixed;
+  }
+}
+
+/* Large screens */
+@media only screen and (min-width: 1200px) {
+  /* Styles */
+  body{
+    background-image: url('section.jpg');
+    background-size: cover;
+  }
+  img{
+    width: 90%;
+    height: 30%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 10%;
+    border-radius: 7px;
+  }
+  .images{
+    background-color: lightgrey;
+    border-radius: 7px;
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  h2{
+    background-color: purple;
+    margin-top: -1%;
+    padding: 10px;
+    text-align: center;
+    width: 105%;
+    margin-left: -5%;
+    position: fixed;
+  }
+  .back{
+    margin-left: 80%;
+    margin-top: 20% 0;
+    position: fixed;
+  }
 }
